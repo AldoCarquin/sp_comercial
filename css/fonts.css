@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+.f-comfortaa {
+    font-family: 'Comfortaa', sans-serif;
+}
 
 .f-lato {
     font-family: 'Lato', sans-serif;
@@ -102,16 +107,16 @@ font-size: 110px;
 font-size: 120px;
 }
 
-.f-thin{
+.fw-100 {
     font-weight: 100;
 }
 .fw-200 {
     font-weight: 200;
 }
-.f-light {
+.fw-300 {
     font-weight: 300;
 }
-.f-regular {
+.fw-400 {
     font-weight: 400;
 }
 .fw-500 {
@@ -120,11 +125,24 @@ font-size: 120px;
 .fw-600 {
     font-weight: 600;
 }
-.f-bold {
+.fw-700 {
     font-weight: 700;
 }
 .fw-800 {
     font-weight: 800;
+}
+
+.f-thin{
+    font-weight: 100;
+}
+.f-light {
+    font-weight: 300;
+}
+.f-regular {
+    font-weight: 400;
+}
+.f-bold {
+    font-weight: 700;
 }
 .f-black {
     font-weight: 900;

@@ -1,4 +1,7 @@
 :root {
+    --vitalia: #009247;
+    --ritalia: #ED1C24;
+
     --blanco: #fafafa;
     --negro: #12191c;
     --azul: #15364a;
@@ -25,6 +28,14 @@
 }
 
 /* Color */
+
+.vitalia {
+    color: var(--vitalia);
+}
+
+.ritalia {
+    color: var(--ritalia);
+}
 
 .blanco {
     color: var(--blanco);
@@ -79,6 +90,14 @@
 }
 
 /* fondo */
+
+.bgc-vitalia {
+    background-color: var(--vitalia);
+}
+
+.bgc-ritalia {
+    background-color: var(--ritalia);
+}
 
 .bgc-blanco {
     background-color: var(--blanco);
