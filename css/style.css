@@ -29,3 +29,17 @@ background-color: #fafafa;
     color: #242424;
     text-decoration: none;
 }
+
+.producto {
+    opacity: 0.7;
+    background-color: var(--negro);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+}
+.producto:hover {
+    opacity: 0.2;
+    background-color: var(--negro);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+
+}
