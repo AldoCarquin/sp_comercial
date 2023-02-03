@@ -338,6 +338,12 @@
 .hp-100 {
     height: 100px;
 }
+.hp-150 {
+    height: 150px;
+}
+.hp-180 {
+    height: 180px;
+}
 .hp-200 {
     height: 200px;
 }
@@ -371,6 +377,9 @@
 .hp-300 {
     height: 300px;
 }
+.hp-350 {
+    height: 350px;
+}
 .hp-400 {
     height: 400px;
 }
@@ -392,19 +401,22 @@
 
 
 /* MIN-HEIGHT */
-.min-h-1 {
+.mnh-1 {
     min-height: 1%;
 }
 
 /* MIN-HEIGHT-px */
-.min-hp-1 {
+.mnhp--1 {
     min-height: 1px;
 }
-.min-hp-180 {
+.mnhp-180 {
     min-height: 180px;
 }
-.min-hp-200 {
+.mnhp-200 {
     min-height: 200px;
+}
+.mnhp-300 {
+    min-height: 300px;
 }
 
 /* MAX-HEIGHT */
@@ -731,6 +743,9 @@
 }
 .ptp-10 {
     padding-top: 10px;
+}
+.ptp-15 {
+    padding-top: 15px;
 }
 .ptp-20 {
     padding-top: 20px;

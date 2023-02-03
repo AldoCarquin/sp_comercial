@@ -41,5 +41,26 @@ background-color: #fafafa;
     background-color: var(--negro);
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
+}
 
+.quienes {
+    background-color: var(--vitalia);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+}
+.quienes:hover {
+    background-color: var(--negro);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+}
+
+.nosotros {
+    background-color: var(--ritalia);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+}
+.nosotros:hover {
+    background-color: var(--negro);
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
 }
