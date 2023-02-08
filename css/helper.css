@@ -506,6 +506,12 @@
 .rounded-p10 {
     border-radius: 10px;
 }
+.rounded-p12 {
+    border-radius: 12px;
+}
+.rounded-p50 {
+    border-radius: 50px;
+}
 
 /* ROUNDED DINAMICO */
 .rounded-stp10{

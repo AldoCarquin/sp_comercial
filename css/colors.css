@@ -203,3 +203,7 @@
 .border-white {
     border-color: var(--white);
 }
+
+.fill-negro {
+    fill: var(--negro);
+}
