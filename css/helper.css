@@ -1312,6 +1312,10 @@
 object-fit: cover;
 }
 
+.non-border {
+    border: none !important;
+}
+
 .text-center {
     text-align: center;
 }

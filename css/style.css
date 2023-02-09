@@ -86,5 +86,17 @@ background-color: #fafafa;
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
     color: var(--blanco);
+}
 
+.visto {
+    visibility: visible !important;
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
+}
+
+.oculto {
+    visibility: hidden !important;
+    position: absolute !important;
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
 }

@@ -37,6 +37,14 @@
 
   <title>SP - Productos y servicios</title>
 
+  <script>
+    $(document).ready(function () {
+        $(".abarrotes").click(function () {
+            $(".abarrote-oculto").toggleClass("oculto");
+        });
+    });
+</script>
+
 </head>
 
 <body>
@@ -100,7 +108,7 @@
   <div class="d-flex justify-content-center w-100">
     <div class="w-100 mxwp-1200 row py-3">
 
-      <a href="" class="col-3 justify-content-center align-items-between">
+      <div class="abarrotes col-3 justify-content-center align-items-between">
         <div class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/abarrotes.png" class="hp-250 wp-250" />
           <div class="hp-250 wp-250 mtp--250 producto d-flex justify-content-center align-items-center"></div>
@@ -108,7 +116,7 @@
             <div class="f-comfortaa fsp-24 op-100 blanco msp--20 mtp-10">Abarrotes</div>
           </div>
         </div>
-      </a>
+      </div>
       <a href="" class="col-3 justify-content-center align-items-between">
         <div class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/carnes.png" class="hp-250 wp-250" />
@@ -139,7 +147,7 @@
 
     </div>
   </div>
-  <div class="w-100 mxwp-1200 ms-auto me-auto">
+  <div id="general" class="visto w-100 mxwp-1200 ms-auto me-auto">
     <div class="mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
         GENERAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
@@ -147,7 +155,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100 mxwp-1200 ms-auto me-auto">
+  <div id="abarrotes" class="abarrote-oculto oculto w-100 mxwp-1200 ms-auto me-auto">
     <div class="mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
         Abarrotes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
@@ -155,7 +163,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100 mxwp-1200 ms-auto me-auto">
+  <div id="carnes" class="oculto w-100 mxwp-1200 ms-auto me-auto">
     <div class="mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
         Carnes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
@@ -163,7 +171,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100 mxwp-1200 ms-auto me-auto">
+  <div id="licores" class="oculto w-100 mxwp-1200 ms-auto me-auto">
     <div class="mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
         Licores y bebidas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
@@ -171,7 +179,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100 mxwp-1200 ms-auto me-auto">
+  <div id="vinos" class="oculto w-100 mxwp-1200 ms-auto me-auto">
     <div class="mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
         Vinos y espumantes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
