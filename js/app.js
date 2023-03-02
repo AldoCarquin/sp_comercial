@@ -1,32 +1,45 @@
-// // General
-// function clickGeneral() {
-//     document.querySelector('.abarrotes').innerHTML = ` GENERAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-// lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum. GENERAL`;
-// }
-// // Abarrotes
-// function clickAbarrotes() {
-//     document.querySelector('.abarrotes').innerHTML = ` Abarrotes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-// lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum. Abarrotes`;
-// }
-// // Carnes
-// function clickCarnes() {
-//     document.querySelector('.carnes').innerHTML = ` Carnes Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-// lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum. Carnes`;
-// }
-// // Licores
-// function clickLicores() {
-//     document.querySelector('.licores').innerHTML = ` Licores Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-// lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum. Licores`;
-// }
-// // Vinos
-// function clickVinos() {
-//     document.querySelector('.vinos').innerHTML = ` Vinos Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-// lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum. Vinos`;
-// }
+const parrafo = document.querySelector('.parrafo');
 
-// Definimos variable producto
-let producto = 0;
 
-function clickAbarrotes() {
-    if 
-}
+const general = 'GENERAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
+const abarrotes = 'ABARROTES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
+const carnes = 'CARNES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
+const licores = 'LICORES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
+const vinos = 'VINOS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
+
+const abarrotesBtn = document.getElementById('abarrotes-btn');
+const carnesBtn = document.getElementById('carnes-btn');
+const licoresBtn = document.getElementById('licores-btn');
+const vinosBtn = document.getElementById('vinos-btn');
+
+abarrotesBtn.addEventListener('click', () =>{
+    if (document.querySelector('.parrafo').textContent == abarrotes) {
+        document.querySelector('.parrafo').textContent = general;
+    } else {
+        document.querySelector('.parrafo').textContent = abarrotes;
+    }
+})
+
+carnesBtn.addEventListener('click', () =>{
+    if (document.querySelector('.parrafo').textContent == carnes) {
+        document.querySelector('.parrafo').textContent = general;
+    } else {
+        document.querySelector('.parrafo').textContent = carnes;
+    }
+})
+
+licoresBtn.addEventListener('click', () =>{
+    if (document.querySelector('.parrafo').textContent == licores) {
+        document.querySelector('.parrafo').textContent = general;
+    } else {
+        document.querySelector('.parrafo').textContent = licores;
+    }
+})
+
+vinosBtn.addEventListener('click', () =>{
+    if (document.querySelector('.parrafo').textContent == vinos) {
+        document.querySelector('.parrafo').textContent = general;
+    } else {
+        document.querySelector('.parrafo').textContent = vinos;
+    }
+})
