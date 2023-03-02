@@ -201,6 +201,9 @@
 .mxwp-100 {
     max-width: 100px;
 }
+.mxwp-150 {
+    max-width: 150px;
+}
 .mxwp-200 {
     max-width: 200px;
 }
@@ -408,6 +411,9 @@
 /* MIN-HEIGHT-px */
 .mnhp--1 {
     min-height: 1px;
+}
+.mnhp-40 {
+    min-height: 40px;
 }
 .mnhp-180 {
     min-height: 180px;
@@ -796,6 +802,36 @@
 /* MARGIN START PERCENT */
 .ms-auto {
     margin-left: auto !important;
+}
+.ms-10 {
+    margin-left: 10%;
+}
+.ms-20 {
+    margin-left: 20%;
+}
+.ms-30 {
+    margin-left: 30%;
+}
+.ms-40 {
+    margin-left: 40%;
+}
+.ms-50 {
+    margin-left: 50%;
+}
+.ms-60 {
+    margin-left: 60%;
+}
+.ms-70 {
+    margin-left: 70%;
+}
+.ms-80 {
+    margin-left: 80%;
+}
+.ms-90 {
+    margin-left: 90%;
+}
+.ms-100 {
+    margin-left: 100%;
 }
 /* MARGIN END PERCENT */
 .me-auto {

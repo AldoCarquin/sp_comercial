@@ -1,4 +1,9 @@
-const parrafo = document.querySelector('.parrafo');
+document.addEventListener('DOMContentLoaded', function() {
+// const parrafo = document.querySelector('.parrafo');
+// const abarrotesProd = document.querySelector('.abarrotes');
+// const carnesProd = document.querySelector('.carnes');
+// const licoresProd = document.querySelector('.licores');
+// const vinosProd = document.querySelector('.vinos');
 
 
 const general = 'GENERAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.';
@@ -12,7 +17,11 @@ const carnesBtn = document.getElementById('carnes-btn');
 const licoresBtn = document.getElementById('licores-btn');
 const vinosBtn = document.getElementById('vinos-btn');
 
-abarrotesBtn.addEventListener('click', () =>{
+function cambioClase() {
+    removeClass("producto");
+}
+
+abarrotesBtn.addEventListener('click', () => {
     if (document.querySelector('.parrafo').textContent == abarrotes) {
         document.querySelector('.parrafo').textContent = general;
     } else {
@@ -20,7 +29,7 @@ abarrotesBtn.addEventListener('click', () =>{
     }
 })
 
-carnesBtn.addEventListener('click', () =>{
+carnesBtn.addEventListener('click', () => {
     if (document.querySelector('.parrafo').textContent == carnes) {
         document.querySelector('.parrafo').textContent = general;
     } else {
@@ -28,7 +37,7 @@ carnesBtn.addEventListener('click', () =>{
     }
 })
 
-licoresBtn.addEventListener('click', () =>{
+licoresBtn.addEventListener('click', () => {
     if (document.querySelector('.parrafo').textContent == licores) {
         document.querySelector('.parrafo').textContent = general;
     } else {
@@ -36,10 +45,12 @@ licoresBtn.addEventListener('click', () =>{
     }
 })
 
-vinosBtn.addEventListener('click', () =>{
+vinosBtn.addEventListener('click', () => {
     if (document.querySelector('.parrafo').textContent == vinos) {
         document.querySelector('.parrafo').textContent = general;
     } else {
         document.querySelector('.parrafo').textContent = vinos;
+  
     }
+})
 })

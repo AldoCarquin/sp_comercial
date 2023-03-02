@@ -36,12 +36,13 @@ background-color: #fafafa;
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
 }
-.producto:hover {
+/* .producto:hover {
     opacity: 0.2;
     background-color: var(--negro);
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
-}
+} */
+
 
 .quienes {
     background-color: var(--vitalia);
@@ -63,6 +64,16 @@ background-color: #fafafa;
     background-color: var(--negro);
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
+}
+
+.error-form {
+    margin-top: 20px;
+    background-color: var(--ritalia);
+    color: var(--blanco);
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .button-r {
