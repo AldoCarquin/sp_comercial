@@ -198,6 +198,12 @@
 .mxwp-60 {
     max-width: 60px;
 }
+.mxwp-80 {
+    max-width: 80px;
+}
+.mxwp-90 {
+    max-width: 90px;
+}
 .mxwp-100 {
     max-width: 100px;
 }
@@ -445,6 +451,12 @@
 }
 .mxhp-70 {
     max-height: 70px;
+}
+.mxhp-80 {
+    max-height: 80px;
+}
+.mxhp-90 {
+    max-height: 90px;
 }
 .mxhp-100 {
     max-height: 100px;
