@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/colors.css" />
   <link rel="stylesheet" href="css/helper.css" />
+  <link rel="stylesheet" href="css/spinner.css" />
 
   <title>SP - Contacto</title>
 
@@ -95,12 +96,13 @@
     <div class="w-100 bgc-vitalia d-flex justify-content-center align-items-center">
       <div class="f-comfortaa fsp-24 fw-700 blanco py-2"">Contáctanos</div>
   </div>
-  <div class=" w-100 d-flex justify-content-center align-items-center pbp-30 ptp-50">
-        <div class="mxwp-1200 bgc-vitalia w-100 p-5 rounded-p50 somb-exte-50">
+  <div class=" w-100 d-flex justify-content-center align-items-center pbp-30 ptp-80">
+        <div class="mxwp-800 bgc-vitalia w-100 p-5 rounded-p50 somb-exte-50">
           <div class="row m-0 p-0">
             <div class="col-6 p-0 m-0">
               <div class="w-100 d-flex flex-column justify-content-center align-items-center py-2">
-                <div class="wp-200 hp-230 mbp-20 bgc-white d-flex justify-content-center align-items-center rounded-p50 somb-exte-40">
+                <div
+                  class="wp-200 hp-230 mbp-20 bgc-white d-flex justify-content-center align-items-center rounded-p50 somb-exte-40">
                   <img src="media/contact.png" class="hp-150 wp-150" />
                 </div>
                 <div class="py-2">
@@ -127,34 +129,63 @@
             </div>
             <div class="col-6 m-0 p-0">
               <div class="w-100 pep-ajusteform ">
-                <form id="formulario" class="" method="post">
+                <form id="form" class="" method="post">
                   <div class="p-2">
-                    <label for="nombre" class="f-comfortaa fsp-16 blanco py-1">Nombre:</label>
-                    <input id="nombre" placeholder="Nombre Apellido"
+                    <div class="d-flex align-items-center justify-content-between">
+                      <label for="nombre" class="f-comfortaa fsp-16 blanco py-1">Nombre:</label>
+                    </div>
+                    <input id="nombre" name="nombre" type="text" value="" placeholder="Nombre Apellido"
                       class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                   </div>
                   <div class="p-2">
-                    <label for="empresa" class="f-comfortaa fsp-16 blanco py-1">Empresa</label>
-                    <input id="empresa" placeholder="Nombre Empresa"
+                    <div class="d-flex align-items-center justify-content-between">
+                      <label for="empresa" class="f-comfortaa fsp-16 blanco py-1">Empresa</label>
+                    </div>
+                    <input id="empresa" name="empresa" placeholder="Nombre Empresa"
                       class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                   </div>
                   <div class="p-2">
-                    <label for="email" class="f-comfortaa fsp-16 blanco py-1">Email</label>
-                    <input id="email" placeholder="nombre@email.com"
+                    <div class="d-flex align-items-center justify-content-between">
+                      <label for="email" class="f-comfortaa fsp-16 blanco py-1">Email</label>
+                    </div>
+                    <input id="email" name="email" type="email" placeholder="nombre@email.com"
                       class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                   </div>
                   <div class="p-2">
-                    <label for="teléfono" class="f-comfortaa fsp-16 blanco py-1">Teléfono</label>
-                    <input id="teléfono" placeholder="+569 8765 4321" tipe="number"
+                    <div class="d-flex align-items-center justify-content-between">
+                      <label for="teléfono" class="f-comfortaa fsp-16 blanco py-1">Teléfono</label>
+                    </div>
+                    <input id="teléfono" name="telefono" type="number" placeholder="+569 8765 4321"
                       class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                   </div>
                   <div class="p-2">
-                    <label for="mensaje" class="f-comfortaa fsp-16 blanco py-1">Mensaje</label>
-                    <textarea id="mensaje" placeholder="Redacta aquí tu mensaje"
+                    <div class="d-flex align-items-center justify-content-between pbp-10">
+                      <label for="mensaje" class="f-comfortaa fsp-16 blanco py-1">Mensaje</label>
+                    </div>
+                    <textarea id="mensaje" name="mensaje" type="text" placeholder="Redacta aquí tu mensaje"
                       class="w-100 hp-200 no-decotext bgc-blanco rounded-p12 p-2"></textarea>
                   </div>
-                  <div class="p-2">
-                    <input class="ms-30 me-auto button-r f-comfortaa fsp-18 fw-700" type="submit" value="Enviar">
+                  <div class="d-flex justify-content-between w-100">
+                      <button id="btnEnviar" class="mxwp-120 ms-auto me-auto w-100 button-r f-comfortaa fsp-18 fw-700"
+                        type="submit" disabled>Enviar</button>
+                      <button id="btnReset" class="mxwp-120 ms-auto me-auto w-100 button-r button-r-active f-comfortaa fsp-18 fw-700"
+                        type="reset">Reset</button>
+                  </div>
+                  <div id="spinner" class="d-flex justify-content-center v-hidden py-2">
+                    <div class="sk-circle mtp-20">
+                      <div class="sk-circle1 sk-child"></div>
+                      <div class="sk-circle2 sk-child"></div>
+                      <div class="sk-circle3 sk-child"></div>
+                      <div class="sk-circle4 sk-child"></div>
+                      <div class="sk-circle5 sk-child"></div>
+                      <div class="sk-circle6 sk-child"></div>
+                      <div class="sk-circle7 sk-child"></div>
+                      <div class="sk-circle8 sk-child"></div>
+                      <div class="sk-circle9 sk-child"></div>
+                      <div class="sk-circle10 sk-child"></div>
+                      <div class="sk-circle11 sk-child"></div>
+                      <div class="sk-circle12 sk-child"></div>
+                    </div>
                   </div>
                 </form>
               </div>

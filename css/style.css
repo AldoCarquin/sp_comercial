@@ -66,20 +66,10 @@ background-color: #fafafa;
     transition: all 0.2s ease-out;
 }
 
-.error-form {
-    margin-top: 20px;
-    background-color: var(--ritalia);
-    color: var(--blanco);
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 20px;
-}
-
 .button-r {
     background-color: var(--ritalia);
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 0.5rem !important; 
     padding-bottom: 0.5rem !important; 
     box-shadow: none !important;
@@ -90,9 +80,13 @@ background-color: #fafafa;
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
     text-decoration: none !important;
-}
+    opacity: 0.5;
 
-.button-r:hover{
+}
+.button-r-active{
+    opacity: 1;
+}
+.button-r-active:hover{
     background-color: var(--negro);
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
@@ -117,6 +111,13 @@ background-color: #fafafa;
     transition: all 0.2s ease-out;
 }
 
-.pep-ajusteform {
-    padding-right: 100px;
+.error-form {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--blanco);
+    background-color: var(--ritalia);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
 }

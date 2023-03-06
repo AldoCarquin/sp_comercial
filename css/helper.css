@@ -207,8 +207,32 @@
 .mxwp-100 {
     max-width: 100px;
 }
+.mxwp-110 {
+    max-width: 110px;
+}
+.mxwp-120 {
+    max-width: 120px;
+}
+.mxwp-130 {
+    max-width: 130px;
+}
+.mxwp-140 {
+    max-width: 140px;
+}
 .mxwp-150 {
     max-width: 150px;
+}
+.mxwp-160 {
+    max-width: 160px;
+}
+.mxwp-170 {
+    max-width: 170px;
+}
+.mxwp-180 {
+    max-width: 180px;
+}
+.mxwp-190 {
+    max-width: 190px;
 }
 .mxwp-200 {
     max-width: 200px;
@@ -692,6 +716,9 @@
 .psp-3 {
     padding-left: 3px;
 }
+.psp-5 {
+    padding-left: 5px;
+}
 .psp-10 {
     padding-left: 10px;
 }
@@ -783,6 +810,18 @@
 .ptp-50 {
     padding-top: 50px;
 }
+.ptp-60 {
+    padding-top: 60px;
+}
+.ptp-70 {
+    padding-top: 70px;
+}
+.ptp-80 {
+    padding-top: 80px;
+}
+.ptp-90 {
+    padding-top: 90px;
+}
 .ptp-100 {
     padding-top: 100px;
 }
@@ -805,6 +844,18 @@
 }
 .pbp-50 {
     padding-bottom: 50px;
+}
+.pbp-60 {
+    padding-bottom: 60px;
+}
+.pbp-70 {
+    padding-bottom: 70px;
+}
+.pbp-80 {
+    padding-bottom: 80px;
+}
+.pbp-90 {
+    padding-bottom: 90px;
 }
 .pbp-100 {
     padding-bottom: 100px;
@@ -846,6 +897,36 @@
     margin-left: 100%;
 }
 /* MARGIN END PERCENT */
+.me-10 {
+    margin-right: 10%;
+}
+.me-20 {
+    margin-right: 20%;
+}
+.me-30 {
+    margin-right: 30%;
+}
+.me-40 {
+    margin-right: 40%;
+}
+.me-50 {
+    margin-right: 50%;
+}
+.me-60 {
+    margin-right: 60%;
+}
+.me-70 {
+    margin-right: 70%;
+}
+.me-80 {
+    margin-right: 80%;
+}
+.me-90 {
+    margin-right: 90%;
+}
+.me-100 {
+    margin-right: 100%;
+}
 .me-auto {
     margin-right: auto !important;
 }
@@ -1366,4 +1447,8 @@ object-fit: cover;
 
 .text-center {
     text-align: center;
+}
+.v-hidden {
+    visibility: hidden !important;
+    position: absolute;
 }
