@@ -5,10 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const inputEmail = document.querySelector('#email');
     const inputFono = document.querySelector('#teléfono');
     const inputMensaje = document.querySelector('#mensaje');
+
     const form = document.querySelector('#form');
     const spinner = document.querySelector('#spinner');
+
     const btnSubmit = document.querySelector('#btnEnviar');
     const btnReset = document.querySelector('#btnReset');
+    const btnAceptar = document.querySelector('#aceptar');
+
+    const aviso = document.querySelector('#aviso');
 
     const formulario = {
         nombre: '',
@@ -31,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
     inputFono.addEventListener('blur', validar);
     inputMensaje.addEventListener('blur', validar);
 
+    btnAceptar.addEventListener('click', hideAviso)
+
     form.addEventListener('submit', enviarForm);
 
     btnReset.addEventListener('click', function(e){
@@ -51,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
             spinner.classList.add('v-hidden');
 
             resetFormulario();
-        }, 3000);
+            form.reset();
+            showAviso();
+        }, 1000);
     }
 
     function validar(e) {
@@ -76,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formulario[e.target.name] = e.target.value.trim().toLowerCase();
 
         limpiarAlerta(e.target.parentElement.firstElementChild);
-        console.log(formulario);
+
         comprobarForm();
     }
 
@@ -124,6 +133,18 @@ document.addEventListener('DOMContentLoaded', function () {
         formulario.telefono = '';
         formulario.mensaje = '';
         comprobarForm();
+    }
+
+    function showAviso() {
+        aviso.classList.remove('mtp-200');
+        aviso.classList.remove('top-100');
+        aviso.classList.add('top-50');
+    }
+
+    function hideAviso() {
+        aviso.classList.add('mtp-200');
+        aviso.classList.add('top-100');
+        aviso.classList.remove('top-50');
     }
 
 

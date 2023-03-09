@@ -40,17 +40,17 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <div class="d-flex justify-content-center">
+   <!-- HEADER -->
+   <div class="d-flex justify-content-center">
     <div class="w-100 mxwp-2400 hp-180 d-flex justify-content-between px-5 align-items-center">
 
       <a href="index.html" class="d-flex align-items-center no-decotext link-menu">
-        <div class="mxhp-60 mxwp-60">
-          <img src="media/logo-simple.png" class="w-100 h-100" />
+        <div class="mxhp-90 mxwp-90">
+          <img src="media/logo-simple.png" class="w-100 h-180" />
         </div>
         <div class="d-flex flex-column psp-10 no-decotext link-menu">
-          <span class="f-comfortaa fsp-16 fw-700">Comercializadora y distribuidora</span>
-          <span class="f-comfortaa fsp-16 fw-700">San Pancracio</span>
+          <span class="f-comfortaa fsp-17 fw-700">Comercializadora y Distribuidora</span>
+          <span class="f-comfortaa fsp-17 fw-700">San Pancracio</span>
         </div>
       </a>
 
@@ -62,7 +62,7 @@
           </div>
           <div class="m-0"><span class="dot"></span></div>
           <div class="d-flex justify-content-between align-content-center ">
-            <a href="nosotros.html" class="link-menu no-decotext f-comfortaa fsp-18 fw-700 px-3 ">Nosotros</a>
+            <a href="nosotros.html" class="link-menu f-comfortaa fsp-18 fw-700 px-3 ">Nosotros</a>
           </div>
           <div class="m-0"><span class="dot"></span></div>
           <div class="d-flex justify-content-between align-content-center ">
@@ -89,9 +89,11 @@
           <div class="f-comfortaa fsp-16 fw-700 psp-10 link-menu no-decotext">ventas@spcomercial.cl</div>
         </a>
       </div>
+
     </div>
   </div>
   </div>
+  <!-- CONTENT -->
 
   <div class="w-100 bgc-vitalia d-flex justify-content-center align-items-center">
     <div class="f-comfortaa fsp-24 fw-700 blanco py-2">Nuestros productos</div>
@@ -103,7 +105,7 @@
       <div class="col-3 justify-content-center align-items-between border-0 bgc-blanco">
         <div id="abarrotes-btn" class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/abarrotes.png" class="hp-250 wp-250" />
-          <div class="abarrotes hp-250 wp-250 mtp--250 producto d-flex justify-content-center align-items-center"></div>
+          <div id="imgAbarrotes" class="abarrotes hp-250 wp-250 mtp--250 producto transition-ease-out d-flex justify-content-center align-items-center"></div>
           <div class="position-absolute translate-middle top-50 start-50 text-center">
             <div class="f-comfortaa fsp-24 op-100 blanco msp--20 mtp-10">Abarrotes</div>
           </div>
@@ -112,7 +114,7 @@
       <div href="" class="col-3 justify-content-center align-items-between">
         <div id="carnes-btn" class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/carnes.png" class="hp-250 wp-250" />
-          <div class="carnes hp-250 wp-250 mtp--250 producto d-flex justify-content-center align-items-center"></div>
+          <div id="imgCarnes" class="carnes hp-250 wp-250 mtp--250 producto transition-ease-out d-flex justify-content-center align-items-center"></div>
           <div class="position-absolute translate-middle top-50 start-50 text-center">
             <div class="f-comfortaa fsp-24 op-100 blanco msp--20 mtp-10">Carnes</div>
           </div>
@@ -121,7 +123,7 @@
       <div href="" class="col-3 justify-content-center align-items-between">
         <div id="licores-btn" class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/licores-bebidas.png" class="hp-250 wp-250" />
-          <div class="licores hp-250 wp-250 mtp--250 producto d-flex justify-content-center align-items-center"></div>
+          <div id="imgLicores" class="licores hp-250 wp-250 mtp--250 producto transition-ease-out d-flex justify-content-center align-items-center"></div>
           <div class="clasep position-absolute translate-middle top-50 start-50 text-center">
             <div class="f-comfortaa fsp-24 op-100 blanco msp--20 mtp-10">Licores y bebidas</div>
           </div>
@@ -130,7 +132,7 @@
       <div href="" class="col-3 justify-content-center align-items-between">
         <div id="vinos-btn" class="d-flex flex-column justify-content-center py-4 position-relative">
           <img src="media/vinos-espumante.png" class="hp-250 wp-250" />
-          <div class="vinos hp-250 wp-250 mtp--250 producto d-flex justify-content-center align-items-center"></div>
+          <div id="imgVinos" class="vinos hp-250 wp-250 mtp--250 producto transition-ease-out d-flex justify-content-center align-items-center"></div>
           <div class="position-absolute translate-middle top-50 start-50 text-center">
             <div class="f-comfortaa fsp-24 op-100 blanco msp--20 mtp-10">Vinos y espumantes</div>
           </div>
@@ -139,18 +141,45 @@
 
     </div>
   </div>
-  <div id="general" class="ease visto w-100 mxwp-1200 ms-auto me-auto">
-    <div class="mxwp-600 ms-auto me-auto text-center">
+  <div id="general" class="position-relative over-hidden ease visto w-100 mxwp-1200 ms-auto me-auto hp-100">
+    <div id="parrafoGeneral" class="transition-ease-out position-absolute top-50 start-50 translate-middle mxwp-600 ms-auto me-auto text-center">
       <div class="f-comfortaa fsp-18">
-        <div class="parrafo">
-          GENERAL Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia ullamcorper elementum. Morbi
-          lacinia nunc vel quam feugiat ullamcorper. Sed pulvinar libero ut pellentesque fermentum.
+        <div class="parrafo ease-out mnhp-100">
+          Oferta competitiva de abarrotes no perecibles y congelados, además de una amplia disponibilidad de bebidas alcohólicas y no alcohólicas, asegurando una entrega oportuna y satisfactoria. 
+        </div>
+      </div>
+    </div>
+    <div id="parrafoAbarrotes" class="transition-ease-out position-absolute mtp-100 top-50 start-50 translate-middle mxwp-600 ms-auto me-auto text-center">
+      <div class="f-comfortaa fsp-18">
+        <div class="parrafo ease-out mnhp-100">
+          Todo tipo de abarrotes no perecibles y productos congelados. Trabajamos con distintas marcas y gramajes, con una oferta completa y competitiva. 
+        </div>
+      </div>
+    </div>
+    <div id="parrafoCarnes" class="transition-ease-out position-absolute mtp-100 top-50 start-50 translate-middle mxwp-600 ms-auto me-auto text-center">
+      <div class="f-comfortaa fsp-18">
+        <div class="parrafo ease-out mnhp-100">
+          Oferta de calidad en todo tipo de carnes de vacuno, cerdo y aves. Variedad de cortes y gramajes, asegurando productos sanos y frescos. 
+        </div>
+      </div>
+    </div>
+    <div id="parrafoLicores" class="transition-ease-out position-absolute mtp-100 top-50 start-50 translate-middle mxwp-600 ms-auto me-auto text-center">
+      <div class="f-comfortaa fsp-18">
+        <div class="parrafo ease-out mnhp-100">
+          Bebidas y licores, de distintas marcas y volúmenes, entregando una oferta de alta conveniencia por volúmenes.
+        </div>
+      </div>
+    </div>
+    <div id="parrafoVinos" class="transition-ease-out position-absolute mtp-100 top-50 start-50 translate-middle mxwp-600 ms-auto me-auto text-center">
+      <div class="f-comfortaa fsp-18">
+        <div class="parrafo ease-out mnhp-100">
+          Trabajamos con la mayoría de las marcas locales, proporcionando gran cantidad de alternativas en precios, cepas y características.
         </div>
       </div>
     </div>
   </div>
   <div class="d-flex justify-content-center py-4">
-    <a href="contacto.html" class="button-r f-comfortaa fsp-18 fw-700">Cotiza con nosotros</a>
+    <a href="contacto.html" class="button-r button-r-active px-4 f-comfortaa fsp-18 fw-700">Cotiza con nosotros</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

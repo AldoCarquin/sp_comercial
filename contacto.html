@@ -41,17 +41,17 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <div class="d-flex justify-content-center">
+   <!-- HEADER -->
+   <div class="d-flex justify-content-center">
     <div class="w-100 mxwp-2400 hp-180 d-flex justify-content-between px-5 align-items-center">
 
       <a href="index.html" class="d-flex align-items-center no-decotext link-menu">
-        <div class="mxhp-60 mxwp-60">
-          <img src="media/logo-simple.png" class="w-100 h-100" />
+        <div class="mxhp-90 mxwp-90">
+          <img src="media/logo-simple.png" class="w-100 h-180" />
         </div>
         <div class="d-flex flex-column psp-10 no-decotext link-menu">
-          <span class="f-comfortaa fsp-16 fw-700">Comercializadora y distribuidora</span>
-          <span class="f-comfortaa fsp-16 fw-700">San Pancracio</span>
+          <span class="f-comfortaa fsp-17 fw-700">Comercializadora y Distribuidora</span>
+          <span class="f-comfortaa fsp-17 fw-700">San Pancracio</span>
         </div>
       </a>
 
@@ -90,14 +90,17 @@
           <div class="f-comfortaa fsp-16 fw-700 psp-10 link-menu no-decotext">ventas@spcomercial.cl</div>
         </a>
       </div>
+
     </div>
   </div>
+  </div>
+  <!-- CONTENT -->
   <div class="">
     <div class="w-100 bgc-vitalia d-flex justify-content-center align-items-center">
       <div class="f-comfortaa fsp-24 fw-700 blanco py-2"">Contáctanos</div>
   </div>
   <div class=" w-100 d-flex justify-content-center align-items-center pbp-30 ptp-80">
-        <div class="mxwp-800 bgc-vitalia w-100 p-5 rounded-p50 somb-exte-50">
+        <div class="position-relative mxwp-800 over-hidden bgc-vitalia w-100 p-5 rounded-p50 somb-exte-50">
           <div class="row m-0 p-0">
             <div class="col-6 p-0 m-0">
               <div class="w-100 d-flex flex-column justify-content-center align-items-center py-2">
@@ -166,10 +169,11 @@
                       class="w-100 hp-200 no-decotext bgc-blanco rounded-p12 p-2"></textarea>
                   </div>
                   <div class="d-flex justify-content-between w-100">
-                      <button id="btnEnviar" class="mxwp-120 ms-auto me-auto w-100 button-r f-comfortaa fsp-18 fw-700"
-                        type="submit" disabled>Enviar</button>
-                      <button id="btnReset" class="mxwp-120 ms-auto me-auto w-100 button-r button-r-active f-comfortaa fsp-18 fw-700"
-                        type="reset">Reset</button>
+                    <button id="btnEnviar" class="mxwp-120 ms-auto me-auto w-100 button-r f-comfortaa fsp-18 fw-700"
+                      type="submit" disabled>Enviar</button>
+                    <button id="btnReset"
+                      class="mxwp-120 ms-auto me-auto w-100 button-r button-r-active f-comfortaa fsp-18 fw-700"
+                      type="reset">Reset</button>
                   </div>
                   <div id="spinner" class="d-flex justify-content-center v-hidden py-2">
                     <div class="sk-circle mtp-20">
@@ -190,6 +194,12 @@
                 </form>
               </div>
             </div>
+          </div>
+          <div id="aviso" class="position-absolute start-50 top-100 mtp-200 translate-middle aviso d-flex somb-exte-60 flex-column ">
+            <div class="f-comfortaa ritalia text-center fsp-24 fw-600">¡Formulario enviado!</div>
+            <div class="f-comfortaa blanco text-center ptp-10">Te estaremos contactando en breve.</div>
+            <div class="f-comfortaa blanco text-center mbp-20">Muchas gracias.</div>
+            <button id="aceptar" class="button-r button-r-active px-5 f-comfortaa fw-700">Aceptar</button>
           </div>
         </div>
       </div>
