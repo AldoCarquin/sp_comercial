@@ -131,8 +131,17 @@ body {
     transition: all 0.5s ease-out;
 }
 
-.lista {
-    border: solid 3px;
+.lista-a {
+    border-left: solid 3px;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-right: solid 3px;
+    border-color: var(--negro);
+}
+.lista-b {
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-right: solid 3px;
     border-color: var(--negro);
 }
 

@@ -139,6 +139,9 @@
 .wp-300 {
     width: 300px;
 }
+.wp-350 {
+    width: 350px;
+}
 .wp-400 {
     width: 400px;
 }
@@ -471,6 +474,9 @@
 }
 .mnhp-300 {
     min-height: 300px;
+}
+.mnhp-650 {
+    min-height: 650px;
 }
 
 /* MAX-HEIGHT */
@@ -1522,4 +1528,8 @@ visibility: hidden;
 }
 .top-75 {
     top: 75%;
+}
+
+.fullscreen {
+    height: 95vh;
 }

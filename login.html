@@ -40,43 +40,36 @@
 </head>
 
 <body>
-    <div class="w-100 h-100 bgc-negro py-5">
+    <div class="fullscreen bgc-negro py-5">
         <!-- LOGO -->
         <div class="ms-auto me-auto wp-200 mbp-50">
             <img src="media/SP_Claudio Orrego-09.png" class="mxhp-200 mxwp-200">
         </div>
         <!-- CONTENT -->
-        <div class="mxwp-1200 mnhp-300 bgc-vitalia rounded-p50 ms-auto me-auto p-5">
-            <div class="row w-100">
-                <div class="col-6 m-0 p-0 blanco bgc-blanco lista">
-                    <div class="w-100 text-center f-comfortaa fsp-21 fw-700 bgc-vitalia">Lista de formularios</div>
-                    <div class="w-100 seleccion active">Renato Poblete</div>
-                    <div class="w-100 seleccion">Millaray Cornejo</div>
-                    <div class="w-100 seleccion">Juan Verdugo</div>
-                </div>
-                <div class="col-6 m-0 p-0 blanco lista bgc-blanco">
-                    <div class="w-100 text-center f-comfortaa fsp-21 fw-700 bgc-vitalia">Datos</div>
-                    <div class="">
-                        <div class="w-100 resultado">Nombre:</div>
-                        <div class="resultado-form">Renato Poblete</div>
+        <div class="w-100">
+            <div
+                class="ms-auto me-auto hp-300 wp-500 bgc-vitalia rounded-p50 somb-inte-90 d-flex justify-content-center align-items-center">
+                <form id="login" class="" method="post">
+                    <div class="p-2 wp-350">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <label for="user" class="f-comfortaa fsp-16 blanco py-1">Usuario</label>
+                        </div>
+                        <input id="user" name="user" type="text" value="" placeholder="User"
+                            class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                     </div>
-                    <div class="">
-                        <div class="w-100 resultado">Empresa:</div>
-                        <div class="resultado-form">Renato S.A.</div>
+                    <div class="p-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <label for="pass" class="f-comfortaa fsp-16 blanco py-1">Contraseña</label>
+                        </div>
+                        <input id="pass" type="password" name="pass" placeholder="Contraseña"
+                            class="w-100 hp-30 no-decotext bgc-blanco rounded-p12 p-2"></input>
                     </div>
-                    <div class="">
-                        <div class="w-100 resultado">Email:</div>
-                        <div class="resultado-form">renato.poblete@email.com</div>
+                    <div class="d-flex justify-content-between w-100 mtp-20">
+                        <button id="btnEnviar"
+                            class="mxwp-120 ms-auto me-auto w-100 button-r f-comfortaa fsp-18 fw-700"
+                            type="submit" disabled>Enviar</button>
                     </div>
-                    <div class="">
-                        <div class="w-100 resultado">Número:</div>
-                        <div class="resultado-form">+56987654321</div>
-                    </div>
-                    <div class="pbp-20">
-                        <div class="w-100 resultado">Mensaje:</div>
-                        <div class="resultado-form">Estoy interesado en cotizar 100 toneladas de comida muy rica. Por lo que procedo a rellenar con texto cualquiera que sirva de ejemplo.</div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -88,7 +81,7 @@
         </div>
     </a>
 
-    <script src="js/index.js"></script>
+    <script src="js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
