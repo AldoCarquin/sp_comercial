@@ -770,6 +770,21 @@
 .psp-40 {
     padding-left: 40px;
 }
+.psp-50 {
+    padding-left: 50px;
+}
+.psp-60 {
+    padding-left: 60px;
+}
+.psp-70 {
+    padding-left: 70px;
+}
+.psp-80 {
+    padding-left: 80px;
+}
+.psp-90 {
+    padding-left: 90px;
+}
 .psp-100 {
     padding-left: 100px;
 }
@@ -1015,6 +1030,12 @@
 }
 .msp-20 {
     margin-left: 20px;
+}
+.msp-30 {
+    margin-left: 30px;
+}
+.msp-40 {
+    margin-left: 40px;
 }
 .msp-50 {
     margin-left: 50px;
